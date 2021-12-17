@@ -1,0 +1,16 @@
+﻿<Window x:Class="NuxWloski.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NuxWloski"
+        mc:Ignorable="d"
+        Title="NuxWloski" Height="120" Width="241" ResizeMode="CanMinimize">
+    <Grid>
+        <Label x:Name="Lbl_Word" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0" Content="Word"/>
+        <TextBox x:Name="TB_Answer" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="90,14,0,0" TextWrapping="NoWrap" Width="100"/>
+        <Button x:Name="Btn_submit" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="145,40,0,0" Content="Sumbit" Click="Btn_submit_Click"/>
+        <Button x:Name="Btn_Next" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="90,40,0,0" Content="Next" Click="Btn_Next_Click"/>
+        <Label x:Name="Lbl_Result" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,35,0,0" Content="Result" FontWeight="Bold"/>
+    </Grid>
+</Window>
