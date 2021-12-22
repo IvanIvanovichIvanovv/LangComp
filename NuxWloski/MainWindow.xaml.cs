@@ -68,7 +68,7 @@ namespace NuxWloski
                     Lbl_Result.Foreground = Brushes.Red;
                 }
             }
-
+            TB_Answer.Text = "";
         }
 
         private void Btn_Next_Click(object sender, RoutedEventArgs e)
