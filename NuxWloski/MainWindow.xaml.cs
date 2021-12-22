@@ -68,6 +68,7 @@ namespace NuxWloski
                     Lbl_Result.Foreground = Brushes.Red;
                 }
             }
+
         }
 
         private void Btn_Next_Click(object sender, RoutedEventArgs e)
@@ -92,7 +93,7 @@ namespace NuxWloski
             {
                 Btn_submit_Click(sender, e);
             }
-            if (e.Key == System.Windows.Input.Key.LeftCtrl)
+            if (e.Key == System.Windows.Input.Key.F1)
             {
                 Btn_Next_Click(sender, e);
             }
