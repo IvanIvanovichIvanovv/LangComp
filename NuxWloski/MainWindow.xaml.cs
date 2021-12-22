@@ -85,5 +85,17 @@ namespace NuxWloski
                 Lbl_Word.Content = Methods.SelectedWord.Polish;
             }
         }
+
+        private void TB_Answer_Enter(object sender, KeyEventArgs e)
+        {
+            if (e.Key == System.Windows.Input.Key.Enter) 
+            {
+                Btn_submit_Click(sender, e);
+            }
+            if (e.Key == System.Windows.Input.Key.LeftCtrl)
+            {
+                Btn_Next_Click(sender, e);
+            }
+        }
     }
 }
