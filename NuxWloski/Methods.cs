@@ -33,7 +33,13 @@ namespace NuxWloski
         }
         public static void SaveData() 
         {
-
+            using (StreamWriter filewrite = new StreamWriter("Statistics.csv"))
+            {
+                for (int i = 0; i < words.Count; i++)
+                {
+                    filewrite.WriteLine(String.Format($"{words[i].CorrectAttempts.ToString()},{words[i].WrongAttempts.ToString()}"));
+                }
+            }
         }
     }
 }
