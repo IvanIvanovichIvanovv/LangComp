@@ -17,5 +17,9 @@ namespace NuxWloski
             this.Italian = Italian;
             this.Polish = Polish;   
         }
+        public string GetStats() 
+        {
+            return $"{this.CorrectAttempts},{this.WrongAttempts}";
+        }
     }
 }

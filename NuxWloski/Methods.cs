@@ -31,5 +31,9 @@ namespace NuxWloski
                 words[i].WrongAttempts = Convert.ToInt32(valuesS[1]);
             }
         }
+        public static void SaveData() 
+        {
+
+        }
     }
 }
