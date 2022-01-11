@@ -5,12 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NuxWloski"
         mc:Ignorable="d"
-        Title="Words Compare" Height="120" Width="241" ResizeMode="CanMinimize">
+        Title="Words Compare" Height="121" Width="295" ResizeMode="CanMinimize">
     <Grid>
         <Label x:Name="Lbl_Word" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0" Content="Word"/>
         <TextBox x:Name="TB_Answer" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="90,14,0,0" TextWrapping="NoWrap" Width="100" KeyDown="TB_Answer_Enter"/>
         <Button x:Name="Btn_submit" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="145,40,0,0" Content="Sumbit" Click="Btn_submit_Click"/>
         <Button x:Name="Btn_Next" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="90,40,0,0" Content="Next" Click="Btn_Next_Click"/>
+        <Button x:Name="Btn_Show" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="200,40,0,0" Content="Show Answer" Click="Btn_Show_Click"/>
+        <Label x:Name="Lbl_CorrectAnswer" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="200,10,0,0" Content="Answer" FontWeight="Bold" Visibility="Hidden"/>
         <Label x:Name="Lbl_Result" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,35,0,0" Content="Result" FontWeight="Bold"/>
     </Grid>
 </Window>

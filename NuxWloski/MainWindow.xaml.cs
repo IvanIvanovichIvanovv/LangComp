@@ -85,8 +85,20 @@ namespace NuxWloski
             {
                 Lbl_Word.Content = Methods.SelectedWord.Polish;
             }
+            Lbl_CorrectAnswer.Content = "";
         }
-
+        private void Btn_Show_Click(object sender, RoutedEventArgs e) 
+        {
+            Lbl_CorrectAnswer.Visibility = Visibility.Visible;
+            if (Methods.Language == 0)
+            {
+                Lbl_CorrectAnswer.Content = Methods.SelectedWord.Polish;
+            }
+            else
+            {
+                Lbl_CorrectAnswer.Content = Methods.SelectedWord.Italian;
+            }
+        }
         private void TB_Answer_Enter(object sender, KeyEventArgs e)
         {
             if (e.Key == System.Windows.Input.Key.Enter) 
