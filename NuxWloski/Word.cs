@@ -10,6 +10,8 @@ namespace NuxWloski
     {
         public string Italian { get; set; }
         public string Polish { get; set; }
+        public int CorrectAttempts { get; set; } = 0;
+        public int WrongAttempts { get; set; } = 0; 
         public Word(string Italian, string Polish) 
         {
             this.Italian = Italian;
